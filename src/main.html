@@ -1,0 +1,10 @@
+<h1>Multiplicador de Tabelas</h1>
+<input type="number" [(ngModel)] = "n" />
+<hr />
+<table border="0" *ngIf="n">
+  <tr *ngFor= "let i of [1,2,3,4,5,6,7,8,9,10]">
+    <td>{{n}}</td>
+    <td>X {{i}}</td>
+    <td>= {{n * i}}</td>
+  </tr>
+</table>
